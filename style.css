@@ -227,6 +227,59 @@ grid-area: card-exclusive ;
   color: #FFFFFF;
 }
 
+/* Feature Section */
+.feature-section {
+  max-width: 1600px;
+  background: rgba(35, 14, 61, 1);
+  padding: 120px 200px;
+}
+
+.feature-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.iframe-container {
+  display: flex;
+  width: 75%;
+  gap: 30px;
+}
+
+.iframe-container h3 {
+font-size: 1.5rem;
+font-weight: 700;
+color: #FFFFFF;
+padding: 24px;
+margin-bottom: 12px;
+}
+.iframe-container p {
+  font-size: 1 rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 0 24px ;
+  margin-bottom: 12px;
+}
+
+.iframe-container span {
+  font-size: 1rem;
+  font-weight:600 ;
+  color:#00FF88 ;
+  padding: 12px 0 24px 24px;
+
+  
+}
+
+.host-tag {
+  margin-top: 120px;
+}
+
+.host-container
+
+
+
 
 
 
