@@ -268,17 +268,49 @@ margin-bottom: 12px;
   font-weight:600 ;
   color:#00FF88 ;
   padding: 12px 0 24px 24px;
+  align-items: center;
+  display: flex;
 
-  
 }
 
+.iframe-container span img {
+  margin-right: 6px;
+  
+}
+/* Meet the host section */
 .host-tag {
   margin-top: 120px;
 }
 
-.host-container
+.host-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #35116566;
+  max-width: 1200px;
+  border-radius: 40px;
+  padding: 40px;
+  gap: 24px;
 
+}
+.host-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+.host-info p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
 
+.host-link ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
 
 
 
