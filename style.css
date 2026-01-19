@@ -244,8 +244,9 @@ grid-area: card-exclusive ;
 
 .iframe-container {
   display: flex;
-  width: 75%;
-  gap: 30px;
+  max-width: 1200px;
+  gap: 25px;
+  background: rgba(53, 17, 101, 0.4);
 }
 
 .iframe-container h3 {
@@ -254,6 +255,7 @@ font-weight: 700;
 color: #FFFFFF;
 padding: 24px;
 margin-bottom: 12px;
+
 }
 .iframe-container p {
   font-size: 1 rem;
@@ -360,7 +362,7 @@ hr {
   color: #00FF88;
   font-size: 3rem;
   font-weight:900 ;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .rating span {
@@ -368,6 +370,62 @@ hr {
   font-size: 1rem;
   font-weight: 400;
 }
+
+/* Footer section */
+
+footer {
+  max-width: 1600px;
+  height: 412px;
+  text-align: center;
+  background-image: url(./images/footer-bg.png);
+  padding: 112px 120px;
+}
+
+.logo2{
+  color: #FFFFFF;
+  font-size: 3.75rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.logo2 span {
+  background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.social-link {
+  width: 75%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.social-link ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  }
+
+.link {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+  .link  img {
+  margin-right: 5px;
+  margin-bottom: 35px;
+  }
+
+  footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
 
 
 
