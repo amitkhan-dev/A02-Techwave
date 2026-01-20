@@ -202,10 +202,10 @@ btn:hover {
 
 
 /* Main section */
-/* /* main {
+main {
   display: flex;
   flex-direction: column; 
-}*/
+}
 
 /* About Secton */
 
@@ -371,7 +371,7 @@ margin-bottom: 12px;
 .card-info span img {
   margin-right: 6px;
   
-} */
+} 
 /* Meet the host section */
 .host-tag {
   margin-top: 120px;
@@ -437,9 +437,6 @@ margin-bottom: 12px;
   margin-bottom: 16px;
 }
 
-/* .podcast-info p .break-line {
-  margin-bottom: 64px;
-} */
 
 hr {
   margin-top: 64px;
@@ -566,7 +563,20 @@ background-clip: text;
     left: 60%;
   }
 
+main {
+  display: flex;
+}
 
+.podcast-container {
+  order: 1;
+}
+.about-section {
+  order: 2;
+  
+}
+.feature-section {
+  order: 3;
+}
   
   .about-section {
     padding: 15px;
@@ -611,8 +621,4 @@ height: 43px;
   top: 21%;
   left: 46%;
 }
-}
-
-@media screen and (min-width:992px){
-  
 }
