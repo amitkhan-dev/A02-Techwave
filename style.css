@@ -7,6 +7,11 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 /* header section */
 
 /* Navbar */
@@ -20,7 +25,7 @@ nav {
   justify-content: space-between;
   background-color: #1A0B2E;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 16px 200px;
   border-bottom: 1px solid #412567;
 
@@ -66,6 +71,7 @@ btn:hover {
 
 .menu {
   display: none;
+  /* display: inline; */
 }
 
 /* Hero section */
@@ -137,8 +143,32 @@ btn:hover {
   color: #ffffff;
   border-radius: 1000px;
   text-align: center;
+  animation-name: btn;
+  animation: btn 2s infinite ease-in-out ;
 
 }
+
+@keyframes btn {
+  0% {
+    background-color: #1db954;
+    box-shadow: 0 0 5px #1db954;
+    transform: scale(1);
+
+  }
+  50%{
+    background-color: #1ed760;
+    box-shadow: 0 0 20px  #1db954;
+    transform: scale(1.05);
+  }
+  100%{
+    background-color: #1db954;
+    box-shadow: 0 0 5px #1db954;
+    transform: scale(1);
+
+  }
+}
+
+
 .btn3 {
   font-size: 16px;
   font-weight: 600;
@@ -147,7 +177,35 @@ btn:hover {
   border: 1px solid #00FF88;
   border-radius: 10000px;
   background: transparent;
+  animation-name: btn3;
+  animation: btn3 2.5s infinite ease-in-out;
+
 }
+
+@keyframes btn3 {
+  0% {
+    box-shadow: 0 0 5px #1db954;
+    transform: scale(1);
+
+  }
+  50%{
+    box-shadow: 0 0 20px  #1db954;
+    transform: scale(1.05);
+  }
+  100%{
+    box-shadow: 0 0 5px #1db954;
+    transform: scale(1);
+
+  }
+}
+
+
+
+/* Main section */
+/* /* main {
+  display: flex;
+  flex-direction: column; 
+}*/
 
 /* About Secton */
 
@@ -167,7 +225,9 @@ btn:hover {
 }
 
 .card-container>* {
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   border-radius: 40px;
   background: rgba(53, 17, 101, 0.4);
   padding: 40px;
@@ -228,10 +288,11 @@ grid-area: card-exclusive ;
 }
 
 /* Feature Section */
+
+
 .feature-section {
   max-width: 1600px;
   background: rgba(35, 14, 61, 1);
-  padding: 120px 200px;
 }
 
 .feature-section h2 {
@@ -243,21 +304,43 @@ grid-area: card-exclusive ;
 }
 
 .iframe-container {
-  display: flex;
   max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 auto;
+  width: 90%;
   gap: 25px;
   background: rgba(53, 17, 101, 0.4);
+  margin-bottom: 120px;
 }
 
-.iframe-container h3 {
+.video-card {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.video-card iframe {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.video-card .card-info {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-info h3 {
 font-size: 1.5rem;
 font-weight: 700;
 color: #FFFFFF;
 padding: 24px;
 margin-bottom: 12px;
 
-}
-.iframe-container p {
+
+} 
+
+.card-info p {
   font-size: 1 rem;
   font-weight: 400;
   color: #FFFFFF;
@@ -265,7 +348,7 @@ margin-bottom: 12px;
   margin-bottom: 12px;
 }
 
-.iframe-container span {
+.card-info span {
   font-size: 1rem;
   font-weight:600 ;
   color:#00FF88 ;
@@ -275,10 +358,10 @@ margin-bottom: 12px;
 
 }
 
-.iframe-container span img {
+.card-info span img {
   margin-right: 6px;
   
-}
+} */
 /* Meet the host section */
 .host-tag {
   margin-top: 120px;
@@ -290,9 +373,12 @@ margin-bottom: 12px;
   align-items: center;
   background-color: #35116566;
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   border-radius: 40px;
   padding: 40px;
   gap: 24px;
+  
 
 }
 .host-info h3 {
@@ -352,6 +438,7 @@ hr {
 .rating-info {
   width: 75%;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
@@ -432,6 +519,9 @@ background-clip: text;
 
 
 @media screen and (max-width:576px) {
+  nav {
+    padding: 20px 20px;
+  }
   .nav {
     max-width: 100%;
     gap: 30px;
@@ -443,10 +533,34 @@ background-clip: text;
   .menu {
     display: inline;
   }
-  .about-section{
-    padding: 0;
+  /* hero section */
+
+  .hero-container{
+    background-image: url(./images/hero-bg-rsp.png);
+
+  }
+
+  .circle-img {
+    width: 200px;
+    margin: 40px 50px ;
+
+  }
+  .microphone-img {
+    width: 80px;
+    top: 30%;
+    left: 33%
+  }
+  .new-tab {
+    top: 15%;
+    left: 60%;
+  }
+
+
   
-}
+  .about-section {
+    padding: 15px;
+  }
+
 
   .card-container {
     grid-template-areas: 
@@ -457,4 +571,29 @@ background-clip: text;
     "card-rich";
     
   }
+
+
+  .host-container {
+    flex-direction: column;
+    margin: auto;
+    padding: 40px;
+    width: 100%;
+  }
+  .host-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .host-link ul {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iframe-container {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media screen and (min-width:992px){
+  
 }
