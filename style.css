@@ -310,11 +310,12 @@ grid-area: card-exclusive ;
   margin: 0 auto;
   width: 90%;
   gap: 25px;
-  background: rgba(53, 17, 101, 0.4);
+  
   margin-bottom: 120px;
 }
 
 .video-card {
+  background: rgba(53, 17, 101, 0.4);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -405,6 +406,7 @@ margin-bottom: 12px;
 .podcast-container {
   max-width: 1600px;
   background: rgba(35, 14, 61, 1);
+  padding-top: 50px;
 }
 
 .podcast-info {
