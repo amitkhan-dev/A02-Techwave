@@ -318,12 +318,21 @@ grid-area: card-exclusive ;
   background: rgba(53, 17, 101, 0.4);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  position: relative;
 }
 
 .video-card iframe {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.youtube-icon {
+position: absolute;
+width: 80px;
+height: 70px;
+  top: 16%;
+  left: 40%;
 }
 
 .video-card .card-info {
@@ -594,6 +603,14 @@ background-clip: text;
   .iframe-container {
     grid-template-columns: repeat(1,1fr);
   }
+
+  .youtube-icon {
+position: absolute;
+width: 43px;
+height: 43px;
+  top: 21%;
+  left: 46%;
+}
 }
 
 @media screen and (min-width:992px){
